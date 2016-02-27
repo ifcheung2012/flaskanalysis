@@ -25,9 +25,6 @@ def get_douball_random(count):
     print(type(result))
     return jsonify({'return random result' : str(result)})
 
-@app.route('/user/<string:username>')
-def show_user_profile(username):
-    return 'User %s' % username
 
 
 class MyView(BaseView):
